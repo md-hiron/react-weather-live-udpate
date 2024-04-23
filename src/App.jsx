@@ -1,9 +1,16 @@
 import Page from "./page"
-function App() {
+import { WeatherProvider, FavouriteProvider } from "./provider"
 
+function App() {
+    
   return (
     <>
-      <Page />
+    <WeatherProvider>
+      <FavouriteProvider>
+        <Page />
+      </FavouriteProvider>
+      
+    </WeatherProvider>
     </>
   )
 }
